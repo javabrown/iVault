@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.plugin.Vault" version="0.0.1">
+    <name>Vault</name>
+
+	<author>Raja Khan</author>
+	
+	<license>Apache</license>
+	
+	<description>
+		Store and retrieve secure data such as password, credit-card info into keychain of ios plateform.
+	</description>
+	
+    <js-module src="www/vault.js" name="Vault">
+        <clobbers target="cordova.plugins.vault" />
+    </js-module>
+    
+	<info>
+		This plugin gives you the ability to store and retrieve secure data such as credentials, credit-card info into secure iOS Keychain.
+	</info>
+     
+    <!-- ios -->
+    <platform name="ios">    
+        <config-file target="config.xml" parent="/*">
+            <feature name="Vault">
+                <param name="ios-package" value="Vault" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/Vault.h" />
+        <source-file src="src/ios/Vault.m" />
+        
+        <framework src="UIKit.framework" weak="true" />
+    </platform>
+          
+</plugin>
