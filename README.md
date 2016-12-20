@@ -7,9 +7,6 @@ A phonegap 3.x plugin to store and retrieve sercure data such as password, credi
 :warning: Report issues on the [Apache Cordova issue tracker](https://issues.apache.org/jira/browse/CB-9966)
 
 
-##iOS keychain internal design 
-![](https://raw.githubusercontent.com/javabrown/iOS-Keychain-Plugin/master/example/icons/keychain-design.png "iOS keychain internal design ")
-
 Installing
 ======
 You may use phonegap CLI as follows:
@@ -19,6 +16,10 @@ You may use phonegap CLI as follows:
 [phonegap] adding the plugin: https://github.com/javabrown/vault.git
 [phonegap] successfully added the plugin
 </pre>
+
+
+##iOS keychain internal design 
+![](https://raw.githubusercontent.com/javabrown/iOS-Keychain-Plugin/master/example/icons/keychain-design.png "iOS keychain internal design ")
 
 
 Using
